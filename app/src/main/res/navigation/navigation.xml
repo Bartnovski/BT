@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/BTFeed">
+    <fragment
+        android:id="@+id/BTFeed"
+        android:name="ru.spectator.bt.ui.BTFeed"
+        android:label="BTFeed"
+        tools:layout="@layout/bt_feed">
+        <action
+            android:id="@+id/action_BTFeed_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.spectator.bt.ui.MainFragment"
+        tools:layout="@layout/main_fragment"
+        android:label="MainFragment" />
+</navigation>
